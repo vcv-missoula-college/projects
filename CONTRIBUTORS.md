@@ -8,5 +8,5 @@
 
 * Cole Cunningham
 * Emerald I Sargent
-*Kajun S Schmaus
+* Kajun S Schmaus
 * Kendra L Zuleger
