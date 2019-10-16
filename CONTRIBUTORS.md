@@ -6,6 +6,7 @@
 
 ## Fall 2019
 
+* Charles Aldeen
 * Cole Cunningham
 * Camillia Diacon
 * Emerald I Sargent
