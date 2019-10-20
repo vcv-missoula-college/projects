@@ -19,7 +19,7 @@ class Calculations{
 	// Add Unit tests here! //
 	
 	// Unit tests for returnDiff long methods -- Emerald //
-	assert (myc.returnDiff(15, 10) == 6);  //FIXME to == 5
+	assert (myc.returnDiff(15, 10) == 5);
 	assert (myc.returnDiff(0, 0) == 0);
 	assert (myc.returnDiff(9500000, 1500000) == 8000000);
 	assert (myc.returnDiff(-9500000, 1500000) == -11000000);
