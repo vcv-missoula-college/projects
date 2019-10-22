@@ -11,10 +11,10 @@ class Calculations{
 			System.out.println("Not valid");
 		}
    }
-  	public static void Divide (float x, float y) {
-		//Camillia Divide by float//
+  	public static void Divide (long x, long y) {
+		//Camillia Divide by long//
 		if ((y > 0) || (y < 0)) {	
-			float z = x / y;
+			long z = x / y;
 			System.out.println(z);
 		}
 		else {
@@ -25,10 +25,10 @@ class Calculations{
 
   public static void main(String[] args) {
 	Calculations myc = new Calculations();
-	//Camillia Unit test Double//
+	//Camillia Unit test Long//
 	if (Divide(10000/2) == 500) 
 		System.out.println("Divide double works");
-	//Camillia unit test float//
+	//Camillia unit test double//
 	if (Divide(20,0.5) == 400)
 		System.out.println("Divide float works");
   }
