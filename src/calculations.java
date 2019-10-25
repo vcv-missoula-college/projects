@@ -32,6 +32,18 @@ class Calculations{
    }
   
   
+<<<<<<< HEAD
+	// Kajun
+	public long square(long x) {
+		long sqr = x * x;
+		return sqr;
+	}
+	// Kajun
+	public double square(double x) {
+		double sqr = x * x;
+		return sqr;
+	}
+=======
   //method to return sqrt(long)--Kendra//
   public long calcSqrt(long userNum) {	  
 	  if(userNum < 0){
@@ -57,6 +69,7 @@ class Calculations{
 		return squareRoot;
 	  }
   
+>>>>>>> 730e702a56dedbfb834171b607ba9adb44a782f1
 
   // Emerald //
   public long returnDiff(long num1, long num2) {
@@ -68,9 +81,17 @@ class Calculations{
 	double diff = num1 - num2;
 	return diff;
   }
+  
 
   public static void main(String[] args) {
 	Calculations myc = new Calculations();
+	  Calculations myc = new Calculations();
+	  // Add Unit tests here! //
+	  // Kajun - Tests square() with longs
+	  assert myc.square(3) == 9;
+	  assert myc.square(0) == 0;
+	  assert myc.square(20000) == 400000000;		
+	  assert myc.square(-20000) == 400000000;
 	
 	// Cole - Tests add() with longs 
 	assert (myc.add(3, 5) == 8);
@@ -90,6 +111,13 @@ class Calculations{
 	//Camillia unit test double//
 	if (Divide(20,0.5) == 400)
 		System.out.println("Divide float works");
+	
+	  // Kajun - Tests square() with doubles
+	  assert myc.square(3.3) == 10.889999999999999;
+	  assert myc.square(0.0) == 0;
+	  assert myc.square(30000.03) == 9.000018000008999E8;
+	  assert myc.square(-30000.03) == 9.000018000008999E8;
+	
 	
 	// Unit tests for returnDiff long methods -- Emerald //
 	assert (myc.returnDiff(15, 10) == 5);
