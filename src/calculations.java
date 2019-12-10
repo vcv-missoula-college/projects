@@ -10,33 +10,16 @@ class Calculations{
 		double sum = x + y;
 		return sum;
 	}
+	
 	public double divide (double x, double y) {
 		//Camillia Divide by double//
-		if ( x < 0 || y < 0) {
-			x = Math.abs(x);
-			y = Math.abs(y);
-			double result = x / y;
-			return result;
-		}
-		else {
-			double divided = x / y;
-			return divided;
-		}
+		double divided = x / y;
+		return divided;
 	}
   	public long divide (long x, long y) {
-		//Camillia Divide by long//
-		if (x < 0 || y < 0) {
-			x = Math.abs(x);
-			y = Math.abs(y);
-			long result = x / y;
-			return result;
-		}
-		else {
-			long divided = x / y;
-			return divided;
-		}
+		long divided = x / y;
+		return divided;
 	}
-  
   
 	// Kajun
 	public long square(long x) {
@@ -88,7 +71,7 @@ class Calculations{
 	
 	//multiplication method
 	public long multiply(long x, long y) {
-		long mult = (long) x * y;
+		long mult = x * y;
 		return mult;
 	}
 	
