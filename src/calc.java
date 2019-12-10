@@ -17,7 +17,8 @@ class MCCalculator{
 		System.out.println("Using esargent's calculator:");
 		esargent.main(args);
 	} else if(which_calc.equalsIgnoreCase("kschmaus")) {
-		// Add code here to starting point of implemtation
+		System.out.println("Using kschmaus's calculator:");
+		kschmaus1.main(args);
 	} else if(which_calc.equalsIgnoreCase("kzuleger")) {
 		// Add code here to starting point of implemtation
     kzuleger_calculator.main(args);
