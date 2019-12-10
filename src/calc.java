@@ -9,6 +9,7 @@ class MCCalculator{
 		// Add code here to starting point of implemtation
 	} else if(which_calc.equalsIgnoreCase("ccunningham")) {
 		// Add code here to starting point of implemtation
+		ccunningham_calc.main(args);
 	} else if(which_calc.equalsIgnoreCase("cdiacon")) {
 		// Add code here to starting point of implemtation
 	} else if(which_calc.equalsIgnoreCase("esargent")) {
