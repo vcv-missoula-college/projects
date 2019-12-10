@@ -44,7 +44,6 @@ public class kzuleger_calculator {
 	        for (int n = 0; n < parts.length; n++) {
 	            tokens[n] = new Token(parts[n]);
 	        }
-
 	        // Main loop - process all input tokens
 	        for (int n = 0; n < tokens.length; n++) {
 	            Token nextToken = tokens[n];
@@ -100,11 +99,13 @@ public class kzuleger_calculator {
 	        Scanner input = new Scanner(System.in);
 
 	        // The original input
-	        System.out.print("Enter an expression to compute: Must use spaces between characters");
+	        System.out.print("Enter an expression to compute: Must use spaces between characters: ");
 	        String userInput = input.nextLine();
-	        while(userInput.equalsIgnoreCase("quit")) {
+	        while(!userInput.equalsIgnoreCase("quit")) {
 	        kzuleger_calculator calc = new kzuleger_calculator();
 	        calc.processInput(userInput);
+          System.out.print("Enter an expression to compute: Must use spaces between characters: ");
+          userInput = input.nextLine();
 	        }
 	    }
 	    

@@ -20,6 +20,7 @@ class MCCalculator{
 		// Add code here to starting point of implemtation
 	} else if(which_calc.equalsIgnoreCase("kzuleger")) {
 		// Add code here to starting point of implemtation
+    kzuleger_calculator.main(args);
 	} else{
 		System.out.println("Did not select a valid calculator valid calculator! Quitting!");
 	}
