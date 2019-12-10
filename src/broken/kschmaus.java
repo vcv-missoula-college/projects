@@ -12,7 +12,7 @@ class kschmaus {
 			paren = paren.indexOf("(", 0).replace("(", "");
 			paren = paren.lastIndexOf(")").replace(")", "");
 			if (paren.contains("(")) {
-				String subParen = paren.substring(userExpression.indexOf("("), userExpression.lastIndexOf(")");
+				String subParen = paren.substring(userExpression.indexOf("("), userExpression.lastIndexOf(")"));
 				subParen = subParen.indexOf("(", 0).replace("(", "");
 				subParen = subParen.lastIndexOf(")").replace(")", "");
 				ks.resolveParen(subParen);
@@ -45,7 +45,7 @@ class kschmaus {
 		kschmaus ks = new kschmaus();
 		String result = "";
 		if (userExpression.contains("(")) {
-			String subExpression = userExpression.substring(userExpression.indexOf("(", 0), userExpression.lastIndexOf(")");
+			String subExpression = userExpression.substring(userExpression.indexOf("(", 0), userExpression.lastIndexOf(")"));
 			ks.resolveParen(subExpression);
 			userExpression = userExpression + subExpression;
 			String[] plusMinus = userExpression.split("(?=[+])|(?<=[+])");
