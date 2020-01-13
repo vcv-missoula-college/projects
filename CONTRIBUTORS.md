@@ -4,11 +4,5 @@
 
 # Students
 
-## Fall 2019
+## Spring 2020
 
-* Charles Aldeen
-* Cole Cunningham
-* Camillia Diacon
-* Emerald I Sargent
-* Kajun S Schmaus
-* Kendra L Zuleger
