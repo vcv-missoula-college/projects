@@ -3,61 +3,61 @@ import hashlib
 import random
 
 letter_2_num_map = {
-    "a" : 1,
-    "b" : 2,
-    "c" : 3,
-    "d" : 4,
-    "e" : 5,
-    "f" : 6,
-    "g" : 7,
-    "h" : 8,
-    "i" : 9,
-    "j" : 10,
-    "k" : 11,
-    "l" : 12,
-    "m" : 13,
-    "n" : 14,
-    "o" : 15,
-    "p" : 16,
-    "q" : 17,
-    "r" : 18,
-    "s" : 19,
-    "t" : 20,
-    "u" : 21,
-    "v" : 22,
-    "w" : 23,
-    "x" : 24,
-    "y" : 25,
-    "z" : 26
+    "a" : 0,
+    "b" : 1,
+    "c" : 2,
+    "d" : 3,
+    "e" : 4,
+    "f" : 5,
+    "g" : 6,
+    "h" : 7,
+    "i" : 8,
+    "j" : 9,
+    "k" : 10,
+    "l" : 11,
+    "m" : 12,
+    "n" : 13,
+    "o" : 14,
+    "p" : 15,
+    "q" : 16,
+    "r" : 17,
+    "s" : 18,
+    "t" : 19,
+    "u" : 20,
+    "v" : 21,
+    "w" : 22,
+    "x" : 23,
+    "y" : 24,
+    "z" : 25
 }
 
 num_2_letter_map = {
-    1 : "a",
-    2 : "b",
-    3 : "c",
-    4 : "d",
-    5 : "e",
-    6 : "f",
-    7 : "g",
-    8 : "h",
-    9 : "i",
-    10 : "j",
-    11 : "k",
-    12 : "l",
-    13 : "m",
-    14 : "n",
-    15 : "o",
-    16 : "p",
-    17 : "q",
-    18 : "r",
-    19 : "s",
-    20 : "t",
-    21 : "u",
-    22 : "v",
-    23 : "w",
-    24 : "x",
-    25 : "y",
-    26 : "z"
+    0 : "a",
+    1 : "b",
+    2 : "c",
+    3 : "d",
+    4 : "e",
+    5 : "f",
+    6 : "g",
+    7 : "h",
+    8 : "i",
+    9 : "j",
+    10 : "k",
+    11 : "l",
+    12 : "m",
+    13 : "n",
+    14 : "o",
+    15 : "p",
+    16 : "q",
+    17 : "r",
+    18 : "s",
+    19 : "t",
+    20 : "u",
+    21 : "v",
+    22 : "w",
+    23 : "x",
+    24 : "y",
+    25 : "z"
 }
 
 english_letter_freq = {
@@ -111,6 +111,7 @@ def print_stats(stats):
         of letters to counts is provided to this function. Thus, the analyze_text function
         should be called prior to calling this function.
     '''
+    assert(stats is not None)
     letters = letter_2_num_map.keys()
     print("Character Frequencies: ")
     print("char   count\t   %\t\t   English %")
@@ -152,18 +153,13 @@ def cipher_shift(c, shift):
     '''
         This is the actual shift function. Given a character (c) and a shift, it will find
         the new character that is shift distant from c. The reutrned character is kept in-bounds
-        using a modulus operation. Note, the actual character number is first reduced by one.
-        This is done to account for the fact that our mappings start from 1. In other words,
-        a=1, b=2, ... However, Modulus returns a zero when there is no remainder. Thus,
-        it is necessary to shift the number to a zero based value before performing modulus.
-        We then undo this shift after the modulus operation is complete, returning to the
-        mapping starting from one. If we mapped a=0, b=1, ... Then we would not need to do
-        these extraneious operations. However, if we did that then having a as a charcter
-        in a key shift would not shift the original character at all.
+        using a modulus operation. Note, that modulus operations (remainders) can be zero. Thus,
+        the alphabet mapping starts from zero and counts up to 25 (instead of 26), but still has
+        26 total entries (size of the alphabet).
     '''
     num = char2num(c)
     if num in num_2_letter_map: 
-        return num_2_letter_map[(((num - 1) + shift) % len(letter_2_num_map)) + 1]
+        return num_2_letter_map[(num + shift) % len(letter_2_num_map)]
     else:
         return c
 
