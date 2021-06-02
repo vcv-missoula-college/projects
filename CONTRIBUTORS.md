@@ -4,5 +4,5 @@
 
 # Students
 
-## Spring 2020
+
 

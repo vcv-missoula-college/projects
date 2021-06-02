@@ -1,2 +1,2 @@
 # projects
-Projects for CSCI 135 and CSCI 136
+This repository is for projects related to the Missoula College Information Technology program.
