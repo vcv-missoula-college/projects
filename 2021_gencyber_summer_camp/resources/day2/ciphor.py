@@ -1,6 +1,7 @@
 import argparse
 import hashlib
 import random
+import sys
 
 letter_2_num_map = {
     "a" : 0,
@@ -114,15 +115,17 @@ def print_stats(stats):
     assert(stats is not None)
     letters = letter_2_num_map.keys()
     print("Character Frequencies: ")
-    print("char   count\t   %\t\t   English %")
+    print("index   char   count\t   %\t\t   English %")
     sum = 0
     for c in stats:
         sum += stats[c]
+    index = 0
     for l in letters:
         if l in stats:
-            print("  {}  =  {}\t-- {:.4f} %\t--\t{} %".format(l, stats[l],(stats[l] / sum) * 100, english_letter_freq[l]))
+            print("  {} \t {}  =  {}\t-- {:.4f} %\t--\t{} %".format(index, l, stats[l],(stats[l] / sum) * 100, english_letter_freq[l]))
         else:
-            print("  {}  =  0\t-- 0%".format(l))
+            print("  {} \t {}  =  0\t-- 0.0\t  % \t-- \t{} %".format(index, l, english_letter_freq[l]))
+        index+=1
 
 def caesar_encrypt(plain_text, shift):
     '''
@@ -416,6 +419,9 @@ def process_command_line():
     parser.add_argument("-t", "--test", dest="test_flag",  action="store_true",
         help="Execute unit tests, print results, then exit.")
     parser.add_argument("message", nargs="*", help="Optional plain or cipher text.")
+    if len(sys.argv) < 2:
+        parser.print_help(sys.stderr)
+        quit()
     return parser.parse_args()
 
 def check_errors(args):
@@ -447,9 +453,11 @@ def main():
     check_errors(args)
     message = ' '.join(args.message)
     ciphered_message = ""
-    if "file" in args and args.file is not None:
-        with open(args.file, 'r') as fd:
+    if "source_file" in args and args.source_file is not None:
+        print("reading file!")
+        with open(args.source_file, 'r') as fd:
             message = fd.read()
+        print("message is: ", message)
     if message is None:
         raise SystemExit("No message to encrypt, decrypt, or get stats for!")
     if args.sig_flag:
