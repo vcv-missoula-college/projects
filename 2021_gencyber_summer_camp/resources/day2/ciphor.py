@@ -170,8 +170,9 @@ def key_encrypt(plain_text, key):
     """
         Basic key encryption algorithm. A key is compared to a plain_text. Each letter in
         the key is used to create a shift that is applied to the plain_text to produce the
-        cipher_text. The shift value for the key is the ASCII value of each character in 
-        the key. Alos, only alphabet characters are actually shifted. The key is cycled
+        cipher_text. The shift value for alphabet chars is that of the mapping. Any other chars
+        in the key are converted to their ASCII numeric equivalent.
+        Also, only alphabet characters in the message are actually shifted. The key is cycled
         through as many times as necessary to shift the entire plain_text.
     """
     if len(key) < 1:
@@ -180,9 +181,12 @@ def key_encrypt(plain_text, key):
     keys = list(key)
     for c in list(plain_text):
         if c.lower() in letter_2_num_map:
-            shift = ord(keys.pop(0))
+            key_char = keys.pop(0)
+            shift = ord(key_char)
+            if key_char in letter_2_num_map:
+                shift = char2num(key_char)            
             cipher_text += cipher_shift(c, shift)
-            keys.append(chr(shift))
+            keys.append(key_char)
         else:
             cipher_text += c
     return cipher_text
@@ -197,9 +201,13 @@ def key_decrypt(cipher_text, key):
     keys = list(key)
     for c in list(cipher_text):
         if c.lower() in letter_2_num_map:
-            shift = ord(keys.pop(0)) *  -1
+            key_char = keys.pop(0)
+            shift = ord(key_char)
+            if key_char in letter_2_num_map:
+                shift = char2num(key_char)    
+            shift = shift *  -1
             plain_text += cipher_shift(c, shift)
-            keys.append(chr(shift * -1))
+            keys.append(key_char)
         else:
             plain_text += c
     return plain_text
