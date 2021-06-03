@@ -1,0 +1,11 @@
+File			Signature
+cc_plain_text1.txt	55056ddeb56103a387243009218f0ac4
+cc_plain_text2.txt	321a63ae61b49459e8cb22417af2424f
+cc_plain_text3.txt	e544144d6d7f03f036d46290c79e1b74	
+cc_plain_text4.txt	a9f66a09b74dfae7125ff72033d5d9aa
+cc_plain_text5.txt	59c87565642f0b12184e4bb1b084302e
+cc_plain_text6.txt	f3d75dba62bae1a261669c2d05cf4a12
+cc_plain_text7.txt	05d30427623da44649e07b6b863a9362
+cc_plain_text8.txt	bff8296aa2b8dfea0db87aebf16fdaca
+cc_plain_text9.txt	bbf3d9f964d9aaf457ad25824e691d39
+cc_plain_text10.txt	3712b3fd33adc9cd60fc7c88ebf771df
