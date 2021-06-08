@@ -1,5 +1,14 @@
 import os
-filenames = os.listdir()
+
+quarantine_dir = os.path.expanduser("~") + "/quarantine"
+if not os.path.exists(quarantine_dir):
+    print("Your quarantine directory does not yet exist\n" +
+          "Navigate to your home directory (cd ~)\n" +
+          "Make a quarantine directory (mkdir quarantine)\n" +
+          "Then, you can start moving the ghosts there")
+    quit()
+
+filenames = os.listdir(quarantine_dir)
 
 
 treasure = {"cherry":100,
@@ -13,7 +22,7 @@ treasure = {"cherry":100,
 
 totalscore = 0
 for filename in filenames:
-    with open(filename) as file:
+    with open(quarantine_dir + "/" + filename) as file:
         lines = file.readlines()
         for line in lines:
             totalscore += treasure.get(line.strip(), 0)
