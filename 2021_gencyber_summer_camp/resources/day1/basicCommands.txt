@@ -1,0 +1,15 @@
+pwd - list current directory
+cd - change directory
+ls - list current directory contents
+nano - file editor
+cat - display file contents
+man - manual pages (help file)
+cp - copy file
+rm - remove file (delete)
+mkdir - make directory
+rmdir - remove directory
+touch - create empty file
+
+tab is used for command completion
+~ means your user's home directory
+sudo elevates the user's permissions, when allowed
