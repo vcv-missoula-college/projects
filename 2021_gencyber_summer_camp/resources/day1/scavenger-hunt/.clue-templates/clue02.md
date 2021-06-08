@@ -34,11 +34,11 @@ To find the next clue, go to the `/usr` directory and count the number of
 subdirectories. This is a hint to your next clue location. Go to the
 `scavenger-hunt` directory, and type
 
-    python next_clue.py [secret number] [next clue number] [hint]
+    python2 next_clue.py [secret number] [next clue number] [hint]
 
 So, if there were 5 directories, we would type
 
-    python next_clue.py 42 3 5
+    python2 next_clue.py 42 3 5
 
 since our secret number is 42, we want to find clue 3, and our hint is 5.
 The location of our next clue should be printed. If you get the hint wrong,
