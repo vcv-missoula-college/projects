@@ -1,6 +1,7 @@
 #! /bin/bash
 
 GITFILE=.git
+mkdir ~/projects
 cd ~/projects
 if test -e "$GITFILE"
 then
