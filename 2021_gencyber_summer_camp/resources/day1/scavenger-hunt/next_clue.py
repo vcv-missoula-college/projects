@@ -5,7 +5,9 @@ import hashlib
 import generate_clues as gc
 
 def check_hint(clue, hint):
-    if (clue == 3):
+    if (clue == 2):
+        return int(hint) == 1
+    elif (clue == 3):
         count = len(os.listdir("/usr"))
         return int(hint) == count
     elif (clue == 4):
@@ -29,7 +31,6 @@ def check_hint(clue, hint):
         return hint in ("-k 5 -n -r", "-k 5 -r -n", "-r -k 5 -n", "-r -n -k 5",\
             "-n -r -k 5", "-n -k 5 -r")
 
-    
 
 if __name__ == "__main__":
 
