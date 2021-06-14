@@ -417,6 +417,7 @@ def process_command_line():
     parser.add_argument("-f", "--file", dest="source_file", help="A plain text or \
         cipher text for encrypt/decryption.")
     parser.add_argument("-k", "--key", dest="key", help="designate a key cipher as the cipher. \
+        a key is usually a word like my_password or cat that you can easily remember. \
         You may only use -c or -k, not both. This argument expects a key of one or more characters.")
     parser.add_argument("-o", "--output", dest="output",
         help="Output a cipher text or plain text (depending on the operation.")
