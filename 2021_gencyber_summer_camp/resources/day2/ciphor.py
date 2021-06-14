@@ -464,8 +464,15 @@ def main():
     ciphered_message = ""
     if "source_file" in args and args.source_file is not None:
         print("reading file!")
-        with open(args.source_file, 'r') as fd:
-            message = fd.read()
+        try:
+            with open(args.source_file, 'r') as fd:
+                message = fd.read()
+        except:
+            raise SystemExit("There was a problem reading the file {}. It may be there is \
+                   a special character in the file (outside normal ASCII). \
+                   ciphor currently supports only basic encodings. You may try \
+                   finding and removing the offending character or using a different file.".format(args.source_file))
+                   
         print("message is: ", message)
     if message is None:
         raise SystemExit("No message to encrypt, decrypt, or get stats for!")
