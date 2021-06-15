@@ -1,6 +1,6 @@
 File			Signature
 cc_plain_text1.txt	55056ddeb56103a387243009218f0ac4
-cc_plain_text2.txt	321a63ae61b49459e8cb22417af2424f
+cc_plain_text2.txt	0670c70ed221d802d2adbf8de34a3d71
 cc_plain_text3.txt	e544144d6d7f03f036d46290c79e1b74	
 cc_plain_text4.txt	a9f66a09b74dfae7125ff72033d5d9aa
 cc_plain_text5.txt	59c87565642f0b12184e4bb1b084302e
