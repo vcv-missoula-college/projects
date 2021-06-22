@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# Installing required package for RFID card reader
+sudo pip3 install mfrc522
+
 GITFILE=.git
 mkdir ~/projects
 cd ~/projects
