@@ -112,7 +112,7 @@
       "I dare say you believed it; but I am by no means convinced that
       you would be gone with such celerity. Your conduct would be quite
       as dependent on chance as that of any man I know; and if, as you
-      were mounting your horse, a friend were to say, ‘Bingley, you had
+      were mounting your horse, a friend were to say, Bingley, you had
       better stay till next week,' you would probably do it, you would
       probably not go--and at another word, might stay a month."
 
@@ -221,7 +221,7 @@
 
       "Oh!" said she, "I heard you before, but I could not immediately
       determine what to say in reply. You wanted me, I know, to say
-      ‘Yes,' that you might have the pleasure of despising my taste;
+      Yes,' that you might have the pleasure of despising my taste;
       but I always delight in overthrowing those kind of schemes, and
       cheating a person of their premeditated contempt. I have,
       therefore, made up my mind to tell you, that I do not want to

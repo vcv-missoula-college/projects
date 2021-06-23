@@ -467,7 +467,8 @@ def main():
         try:
             with open(args.source_file, 'r') as fd:
                 message = fd.read()
-        except:
+        except Exception as e:
+            print(e)
             raise SystemExit("There was a problem reading the file {}. It may be there is \
                    a special character in the file (outside normal ASCII). \
                    ciphor currently supports only basic encodings. You may try \
