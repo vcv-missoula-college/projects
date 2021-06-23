@@ -1,6 +1,6 @@
-for f in ${1}/*
+for F in `find the_message_game -type f`
 do 
-	echo "Translating $f"
-	iconv -f iso-8859-1 -t utf-8//transl $f > ${f}tr
-	mv ${f}tr $f
+	echo "Translating $F"
+	iconv -f iso-8859-1 -t utf-8//transl $F > ${F}tr
+	mv ${F}tr $F
 done
