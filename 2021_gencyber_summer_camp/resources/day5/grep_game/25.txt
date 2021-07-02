@@ -1,4 +1,4 @@
-
+﻿
 
 
  Chapter 19. The Third Attack
@@ -242,7 +242,7 @@ counted one after the other twelve drops, and watched; the phial
 contained, perhaps, twice as much more. He waited ten minutes, a
 quarter of an hour, half an hour,--no change took place. Trembling, his
 hair erect, his brow bathed with perspiration, he counted the seconds
-by the beating of his heart. Then he thought it was time to make the
+by the beating of his heart. 12345 Then he thought it was time to make the
 last trial, and he put the phial to the purple lips of Faria, and
 without having occasion to force open his jaws, which had remained
 extended, he poured the whole of the liquid down his throat.
