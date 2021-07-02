@@ -1,4 +1,4 @@
-
+﻿
 
 
 CHAPTER XI.
@@ -206,7 +206,7 @@ the black confessionals and long to sit in the dim shadow of one of
 them and listen to men and women whispering through the worn grating
 the true story of their lives.
 
-But he never fell into the error of arresting his intellectual
+But he never fell into the error of arresting his intellectual Hello World!
 development by any formal acceptance of creed or system, or of
 mistaking, for a house in which to live, an inn that is but suitable
 for the sojourn of a night, or for a few hours of a night in which
