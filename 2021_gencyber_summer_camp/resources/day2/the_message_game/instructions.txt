@@ -2,9 +2,8 @@ Once your group is split into two, you will recieve a password
 Retrieve your original messages by running:
   ./1_getOriginal.sh ip_address groupWithSide
 
-You can now encrypt your messages.
-
-
+You can now encrypt your messages. They are found in 1_original/
+Once you encrypt the files, put them in 2_submission/
 
 Submit your files by running
   ./2_submitEncrypted.sh ip_address groupWithSide
@@ -13,11 +12,14 @@ This will send all the files in your submission directory
 
 
 
-When everything is submitted, you can run
+
+After everyone has submitted, you can run
   ./3_getEncrypted ip_address groupWithSide
 
 This will retrieve all the files that were submitted from everyone (with randomized file names).
-Work to decrypt the files, placing any decrypted files in 'decrypted'
+These files will be placed in 3_shared/
+Work to decrypt the files, placing any decrypted files in 4_decrypted/
+You will lose points for submitting any files in error (including your original files)
 
 
 When you are done decrypting everything, run
