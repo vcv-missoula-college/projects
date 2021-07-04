@@ -22,13 +22,13 @@ if distanceSensorPresent:
 systemActive = False
 
 def isDistanceSensorTripped():
-""" How to tell when the distanceSensor is triggered """
+    """ How to tell when the distanceSensor is triggered """
     return dSensor.distance < dSensor.max_distance
 
 def motionTriggerEvent():
-""" The even that is called when the motion sensor is activated.
-    When the distance sensor is present, it needs to be triggered also in 
-    order to trigger the alarm, otherwise it triggers the alarm by itself"""
+    """ The even that is called when the motion sensor is activated.
+When the distance sensor is present, it needs to be triggered also in 
+order to trigger the alarm, otherwise it triggers the alarm by itself"""
     if distanceSensorPresent:
         if isDistanceSensorTripped():
             led.off()
@@ -36,7 +36,7 @@ def motionTriggerEvent():
         led.off()
 
 def ignoreEvent():
-""" A function that does nothing """
+    """ A function that does nothing """
     pass
 
 def main():
@@ -49,7 +49,7 @@ def main():
                 led.off()
 
 def reset():
-""" Disables the alarm for a brief reset period, then arms it again """
+    """ Disables the alarm for a brief reset period, then arms it again """
     if motionSensorPresent:
         pir.when_activated = ignoreEvent
     global systemActive 
