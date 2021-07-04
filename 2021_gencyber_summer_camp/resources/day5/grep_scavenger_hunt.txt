@@ -1,0 +1,33 @@
+Grep Scavenger Hunt!
+
+For this exercise please use the files in the grep_game folder.
+
+Fixed Patterns -- Find the file (or files) containing the following patterns. Make note of the file (files) containing that pattern.
+
+1. Hello World!    ________________________________
+
+2. Darwin          ________________________________
+
+3. hospital        ________________________________
+
+4. bank            ________________________________
+
+5. united          ________________________________
+
+6. 12345           ________________________________
+
+Dynamic Patterns -- Find the file (or files) containing the following patterns. Make note of the file (files) containing that pattern.
+
+1. and.*if         ________________________________
+
+2. but.+and        ________________________________
+
+3. numbere?d?      ________________________________ (hint -E)
+
+Create some of your own patterns. Please show the pattern. What were the results.
+
+1. Can you find a phone number?
+
+2. Can you find a missoula address?
+
+3. Create your own dynamic pattern.
