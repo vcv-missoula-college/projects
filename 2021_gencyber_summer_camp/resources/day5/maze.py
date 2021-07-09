@@ -1,3 +1,5 @@
+#! /bin/env python3
+
 import gpiozero
 from time import sleep
 
