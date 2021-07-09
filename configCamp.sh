@@ -15,6 +15,11 @@ else
 	git clone https://github.com/vcv-missoula-college/projects ~/projects
 fi
 
+chmod +x ~/projects/2021_gencyber_summer_camp/resources/day2/ciphor.py
+sudo ln -s ~/projects/2021_gencyber_summer_camp/resources/day2/ciphor.py /usr/bin/ciphor.py
+chmod +x ~/projects/2021_gencyber_summer_camp/resources/day5/maze.py
+sudo ln -s ~/projects/2021_gencyber_summer_camp/resources/day5/maze.py /usr/bin/maze.py
+
 # Deploying pacman ghosts
 cp ~/projects/2021_gencyber_summer_camp/resources/day1/.pacman/g1 ~/Desktop/8linky.txt
 cp ~/projects/2021_gencyber_summer_camp/resources/day1/.pacman/g2 ~/Desktop/PiNkY.txt
