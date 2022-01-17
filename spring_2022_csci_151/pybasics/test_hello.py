@@ -20,8 +20,8 @@ try:
         test_score += 1  # Test Passed
 except Exception as e:
     print("test failed: ", e)
-    pass  # test failed
 
+# Results
 print("Test-Results: ")
 print("PEP8 conformance: {}.".format("Passed" if pep8check else "failed"))
 print("Functionals tests passed {} out of {} tests.".format(test_score,
